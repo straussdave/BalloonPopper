@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://i2fxytljnbj2"]
+
+[ext_resource type="Texture2D" uid="uid://di1ldwl2ftkkx" path="res://Sprites/crosshair.png" id="1_ig5ur"]
+[ext_resource type="Script" path="res://crosshair.gd" id="2_0apyu"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(275.661, 275.25)
+scale = Vector2(0.17713, 0.17713)
+texture = ExtResource("1_ig5ur")
+script = ExtResource("2_0apyu")
