@@ -1,0 +1,17 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1700687004
+Balloon.gd::GDScript::-1::1700686587::0::1::::<>Node2D<>::
+Balloon.tscn::PackedScene::7254358794138895964::1700686919::0::1::::<><>::res://Balloon.gd<>uid://ceq6q1wlr07a7::::res://Sprites/PlayStation - Xenogears - Balloon.png
+BalloonManager.gd::GDScript::-1::1700686803::0::1::::<>Node2D<>::
+Camera.tscn::PackedScene::752637697749225316::1700686804::0::1::::<><>::
+crosshair.gd::GDScript::-1::1700566184::0::1::::<>Sprite2D<>::
+crosshair.tscn::PackedScene::617594897111534441::1700417182::0::1::::<><>::uid://di1ldwl2ftkkx
+icon.svg::CompressedTexture2D::8237432366618948840::1700414053::1700414068::1::::<><>::
+MainScene.tscn::PackedScene::2086693381102936323::1700686804::0::1::::<><>::res://BalloonManager.gd<>uid://di1ldwl2ftkkx::::res://Sprites/crosshair.png<>res://crosshair.gd
+::res://BalloonPopper/::1700686958
+::res://Scenes/::1700417078
+::res://Scripts/::1700417084
+::res://Sprites/::1700568281
+Balloon.png::CompressedTexture2D::9125470286520507734::1700568280::1700568281::1::::<><>::
+crosshair.png::CompressedTexture2D::7775121039832010779::1700415097::1700415724::1::::<><>::
+PlayStation - Xenogears - Balloon.png::CompressedTexture2D::5088538985597854680::1700415750::1700415750::1::::<><>::
