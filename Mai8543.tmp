@@ -19,7 +19,7 @@ radius = 0.1
 [node name="ScoreLayer" type="CanvasLayer" parent="."]
 script = ExtResource("4_ki2je")
 
-[node name="Label" type="Label" parent="ScoreLayer"]
+[node name="ScoreLabel" type="Label" parent="ScoreLayer"]
 offset_right = 40.0
 offset_bottom = 23.0
 text = "test"
