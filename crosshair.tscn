@@ -3,12 +3,12 @@
 [ext_resource type="Texture2D" uid="uid://di1ldwl2ftkkx" path="res://Sprites/crosshair.png" id="1_ig5ur"]
 [ext_resource type="Script" path="res://crosshair.gd" id="2_0apyu"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Crosshair" type="Node2D"]
+position = Vector2(2, 0)
+script = ExtResource("2_0apyu")
+radius = 0.75
 
-[node name="Camera2D" type="Camera2D" parent="."]
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(275.661, 275.25)
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(-2, 0)
 scale = Vector2(0.17713, 0.17713)
 texture = ExtResource("1_ig5ur")
-script = ExtResource("2_0apyu")

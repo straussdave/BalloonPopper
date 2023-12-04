@@ -1,15 +1,26 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1700687522
-Balloon.gd::GDScript::-1::1700686587::0::1::::<>Node2D<>::
-Balloon.tscn::PackedScene::7254358794138895964::1700687012::0::1::::<><>::res://Balloon.gd<>uid://ceq6q1wlr07a7::::res://Sprites/PlayStation - Xenogears - Balloon.png
-BalloonManager.gd::GDScript::-1::1700686803::0::1::::<>Node2D<>::
-Camera.tscn::PackedScene::752637697749225316::1700687012::0::1::::<><>::
-crosshair.gd::GDScript::-1::1700566184::0::1::::<>Sprite2D<>::
-crosshair.tscn::PackedScene::617594897111534441::1700417182::0::1::::<><>::uid://di1ldwl2ftkkx
+::res://::1701714852
+Balloon.gd::GDScript::-1::1701701365::0::1::::<>Node2D<>::
+Balloon.tscn::PackedScene::7254358794138895964::1701714851::0::1::::<><>::res://Balloon.gd<>uid://ceq6q1wlr07a7::::res://Sprites/PlayStation - Xenogears - Balloon.png
+BalloonManager.gd::GDScript::-1::1701714849::0::1::::<>Node2D<>::
+Camera.tscn::PackedScene::752637697749225316::1701714851::0::1::::<><>::
+crosshair.gd::GDScript::-1::1701714543::0::1::::<>Node2D<>::
+crosshair.tscn::PackedScene::617594897111534441::1701714852::0::1::::<><>::uid://di1ldwl2ftkkx::::res://Sprites/crosshair.png<>res://crosshair.gd
 icon.svg::CompressedTexture2D::8237432366618948840::1700414053::1700414068::1::::<><>::
-MainScene.tscn::PackedScene::2086693381102936323::1700687012::0::1::::<><>::res://BalloonManager.gd<>uid://di1ldwl2ftkkx::::res://Sprites/crosshair.png<>res://crosshair.gd
+MainScene.tscn::PackedScene::2086693381102936323::1701714851::0::1::::<><>::res://BalloonManager.gd<>res://Score.gd<>uid://dowr0qu7lyhou::::res://sounds/pop_sound.wav
+main_menu.tscn::PackedScene::1439271328360038136::1701714851::0::1::::<><>::res://main_menu.gd
+main_menu.gd::GDScript::-1::1701705879::0::1::::<>ColorRect<>::
+game_over.tscn::PackedScene::4714278898097397213::1701714955::0::1::::<><>::res://main_menu.gd
+SceneLoader.gd::GDScript::-1::1701700099::0::1::::<>Node<>::
+scene_loader.tscn::PackedScene::3943118630280577481::1701714851::0::1::::<><>::res://SceneLoader.gd
+Score.gd::GDScript::-1::1700689985::0::1::::<>CanvasLayer<>::
+splash_screen.gd::GDScript::-1::1701705699::0::1::::<>ColorRect<>::
+splash_screen.tscn::PackedScene::60458246545968014::1701714851::0::1::::<><>::uid://d3apfrx3lxxgg::::res://Sprites/Balloon.png<>res://splash_screen.gd
+::res://addons/::1700687827
 ::res://Scenes/::1700417078
 ::res://Scripts/::1700417084
+::res://sounds/::1700850245
+pop_sound.wav::AudioStreamWAV::8188399879064999676::1700850236::1700850245::1::::<><>::
 ::res://Sprites/::1700568281
 Balloon.png::CompressedTexture2D::9125470286520507734::1700568280::1700568281::1::::<><>::
 crosshair.png::CompressedTexture2D::7775121039832010779::1700415097::1700415724::1::::<><>::

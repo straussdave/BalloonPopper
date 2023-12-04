@@ -1,10 +1,11 @@
-extends Sprite2D
+extends Node2D
 
 @export var radius : float = 1;
 
 func _ready():
 	# Hide the system cursor when the game starts
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	z_index = 3
 	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

@@ -1,0 +1,9 @@
+res://Balloon.tscn::d9b0d181c707d4911e98bc97df822d62::1701724225::res://.godot/exported/133200997/export-da4d282211bf3fb64bf684eaaf5bb43c-Balloon.scn
+res://Camera.tscn::0289e673aa7281d975fa27cd63ee7e58::1701724225::res://.godot/exported/133200997/export-eeea1d831563f520ad1197294b72b423-Camera.scn
+res://crosshair.tscn::12737aa7605e7f2804d43c980596ad7f::1701722444::res://.godot/exported/133200997/export-2f20742d50d6cc72a68802cb956cc3c0-crosshair.scn
+res://game_over.tscn::83d1a84a4edd276bed1ff19f137f5fcc::1701724225::res://.godot/exported/133200997/export-d8e4acb474e0f28479495aaad84d873f-game_over.scn
+res://MainScene.tscn::7b6ebc6fcf94024583b51f7746475c57::1701724225::res://.godot/exported/133200997/export-a00ca0e08a1ac5e46d330a7c1b8d7acb-MainScene.scn
+res://main_menu.tscn::c8d4637e71e9d2806a0795f35cb774d0::1701724225::res://.godot/exported/133200997/export-8b03550a1e82db90fe95208a9e9dbb82-main_menu.scn
+res://score.tscn::c3c018177bdf62303ba58053e8279f1a::1701724225::res://.godot/exported/133200997/export-2262e171c9dde3f5c6077bef1c360ca8-score.scn
+res://scene_loader.tscn::600a367430d5c640f8e8d9ba76d578cc::1701722444::res://.godot/exported/133200997/export-0047334a83fd7b770bd79b439c04d9e0-scene_loader.scn
+res://splash_screen.tscn::d855dae2eb998d1bc84cef7e2cd7a714::1701724225::res://.godot/exported/133200997/export-29591f1df2700441ba997599a046cda5-splash_screen.scn

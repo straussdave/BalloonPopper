@@ -1,25 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://4y2sguif6git"]
+[gd_scene load_steps=3 format=3 uid="uid://4y2sguif6git"]
 
 [ext_resource type="Script" path="res://BalloonManager.gd" id="1_j1hw3"]
-[ext_resource type="Texture2D" uid="uid://di1ldwl2ftkkx" path="res://Sprites/crosshair.png" id="2_oh1hs"]
-[ext_resource type="Script" path="res://crosshair.gd" id="3_jy62u"]
-[ext_resource type="Script" path="res://Score.gd" id="4_ki2je"]
+[ext_resource type="AudioStream" uid="uid://dowr0qu7lyhou" path="res://sounds/pop_sound.wav" id="5_cyd5k"]
 
 [node name="Root" type="Node2D"]
 script = ExtResource("1_j1hw3")
-balloon_radius = 35.0
 balloon_spawn_timer = 0.5
 
-[node name="Crosshair" type="Sprite2D" parent="."]
-scale = Vector2(0.136771, 0.136771)
-texture = ExtResource("2_oh1hs")
-script = ExtResource("3_jy62u")
-radius = 0.1
-
-[node name="ScoreLayer" type="CanvasLayer" parent="."]
-script = ExtResource("4_ki2je")
-
-[node name="Label" type="Label" parent="ScoreLayer"]
-offset_right = 40.0
-offset_bottom = 23.0
-text = "test"
+[node name="PopSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_cyd5k")
+volume_db = -3.748

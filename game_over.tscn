@@ -1,0 +1,72 @@
+[gd_scene load_steps=6 format=3 uid="uid://b8fvqqkesxhg4"]
+
+[ext_resource type="Script" path="res://main_menu.gd" id="1_hn4e1"]
+[ext_resource type="Script" path="res://game_over_screen.gd" id="2_f4qyv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ne8tq"]
+content_margin_left = 20.0
+content_margin_top = 20.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+bg_color = Color(0.254902, 0.254902, 0.254902, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kagua"]
+bg_color = Color(0.333333, 0.333333, 0.333333, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_awof8"]
+bg_color = Color(0.168627, 0.168627, 0.168627, 1)
+
+[node name="MainMenu" type="ColorRect"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.729412, 0.972549, 0.992157, 0)
+script = ExtResource("1_hn4e1")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+script = ExtResource("2_f4qyv")
+
+[node name="Score" type="RichTextLabel" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 23
+text = "Final Score: "
+fit_content = true
+
+[node name="Accuracy" type="RichTextLabel" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 23
+text = "Accuracy: "
+fit_content = true
+
+[node name="Play again" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 46
+theme_override_styles/normal = SubResource("StyleBoxFlat_ne8tq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kagua")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_awof8")
+text = "Play again"
+
+[node name="Quit" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 46
+theme_override_styles/normal = SubResource("StyleBoxFlat_ne8tq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kagua")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_awof8")
+text = "Quit"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Play again" to="." method="changeToGameScene"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Quit" to="." method="quit"]

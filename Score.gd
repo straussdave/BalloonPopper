@@ -1,12 +1,14 @@
 extends CanvasLayer
 
 var value : int = 0
-var label : Label  # Declare the variable with the Label type
+var label : RichTextLabel
+var shots : int = 0
+var missedShots : int = 0
+var hitShots : int = 0
 
 func _ready():
-	# Use find_node to locate the Label child
-	label = $Label if $Label else null
-
+	label = $ScoreLabel if $ScoreLabel else null
+	self.visible = false
 	if label:
 		# Initialize the label if found
 		update_score_label()

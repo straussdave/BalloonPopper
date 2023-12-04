@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://4j0dxrrbcly"]
+
+[ext_resource type="Texture2D" uid="uid://d3apfrx3lxxgg" path="res://Sprites/Balloon.png" id="1_bce5r"]
+[ext_resource type="Script" path="res://splash_screen.gd" id="1_waqvr"]
+
+[node name="SplashScreen" type="ColorRect"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+color = Color(0.729412, 0.972549, 0.992157, 0)
+script = ExtResource("1_waqvr")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer"]
+layout_mode = 2
+texture = ExtResource("1_bce5r")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="changeToMainScene"]
