@@ -21,6 +21,7 @@ Camera="*res://Camera.tscn"
 SceneLoader="*res://scene_loader.tscn"
 Crosshair="*res://crosshair.tscn"
 Score="*res://score.tscn"
+SilentWolf="*res://addons/silent_wolf/SilentWolf.gd"
 
 [display]
 
