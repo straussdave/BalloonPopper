@@ -22,11 +22,13 @@ SceneLoader="*res://scene_loader.tscn"
 Crosshair="*res://crosshair.tscn"
 Score="*res://score.tscn"
 SilentWolf="*res://addons/silent_wolf/SilentWolf.gd"
+Globals="*res://globals.gd"
 
 [display]
 
 window/size/viewport_width=1154
-window/size/mode=2
+window/size/mode=4
+window/size/resizable=false
 
 [rendering]
 

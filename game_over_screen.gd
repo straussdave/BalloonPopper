@@ -1,13 +1,16 @@
 extends VBoxContainer
 
+var globals
 var accuracyLabel
 var scoreLabel
 var score
 var accuracy
 var sceneLoader
+var name_input
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	globals = $"/root/Globals"
 	sceneLoader = $"/root/SceneLoader"
 	score =  $"/root/Score"
 	scoreLabel = $Score
@@ -31,6 +34,4 @@ func quit():
 	get_tree().quit()
 	
 func saveScoreToLeaderboard():
-	SilentWolf.Scores.save_score("test", score.value)
-	
-
+	SilentWolf.Scores.save_score(globals.playerName, score.value)

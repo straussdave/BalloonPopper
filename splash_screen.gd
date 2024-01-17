@@ -15,4 +15,4 @@ func _ready():
 	sceneLoader = $"/root/SceneLoader"
 	
 func changeToMainScene(): #the Timer node calls this function automatically after it has timed out
-	sceneLoader.changeToScene("main_menu.tscn")
+	sceneLoader.changeToScene("name_input.tscn")

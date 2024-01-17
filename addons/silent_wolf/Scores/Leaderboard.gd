@@ -1,5 +1,5 @@
 @tool
-extends Node2D
+extends ColorRect
 
 const ScoreItem = preload("ScoreItem.tscn")
 const SWLogger = preload("res://addons/silent_wolf/utils/SWLogger.gd")
@@ -90,29 +90,29 @@ func add_item(player_name: String, score_value: String) -> void:
 	item.get_node("PlayerName").text = str(list_index) + str(". ") + player_name
 	item.get_node("Score").text = score_value
 	item.offset_top = list_index * 100
-	$"Board/HighScores/ScoreItemContainer".add_child(item)
+	$"CC/Board/HighScores/ScoreItemContainer".add_child(item)
 
 
 func add_no_scores_message() -> void:
-	var item = $"Board/MessageContainer/TextMessage"
+	var item = $"CC/Board/MessageContainer/TextMessage"
 	item.text = "No scores yet!"
-	$"Board/MessageContainer".show()
+	$"CC/Board/MessageContainer".show()
 	item.offset_top = 135
 
 
 func add_loading_scores_message() -> void:
-	var item = $"Board/MessageContainer/TextMessage"
+	var item = $"CC/Board/MessageContainer/TextMessage"
 	item.text = "Loading scores..."
-	$"Board/MessageContainer".show()
+	$"CC/Board/MessageContainer".show()
 	item.offset_top = 135
 
 
 func hide_message() -> void:
-	$"Board/MessageContainer".hide()
+	$"CC/Board/MessageContainer".hide()
 
 
 func clear_leaderboard() -> void:
-	var score_item_container = $"Board/HighScores/ScoreItemContainer"
+	var score_item_container = $"CC/Board/HighScores/ScoreItemContainer"
 	if score_item_container.get_child_count() > 0:
 		var children = score_item_container.get_children()
 		for c in children:
